@@ -1,0 +1,88 @@
+.col50{
+	position: relative;
+	width: 48%;
+}
+.titleText{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #111;
+	font-size: 3em;
+
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(0);
+}
+.titleText[data-scroll="in"]{
+	transform: scaleX(1);
+}
+
+.titleText:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e26206;
+	transform-origin: left;
+	transition: 0.5s;
+}
+.titleText[data-scroll="in"]:before{
+	transform: scaleX(0);
+	transition-delay: 0.5s;
+}
+.caca{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #111;
+	font-size: 3em;
+	
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(0);
+}
+.caca[data-scroll="in"]{
+	transform: scaleX(1);
+}
+
+.caca:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background: #e26206;
+	transform-origin: left;
+	transition: 0.5s;
+}
+.titleText span{
+	color: #e26206;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+p{
+	font-size: 1.2em;
+	transition: 1s;
+	opacity: 0;
+}
+p[data-scroll="in"]{
+	
+	opacity: 1;
+	transition: 1s;
+}
+.clientLogo{
+	width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid #c00;
+}
+.ehh{
+
+  border-radius: 50%;
+  border:5px groove #ffc083;
+}
